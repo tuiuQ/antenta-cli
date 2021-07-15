@@ -1,6 +1,7 @@
 {
   "packages": [
-    "packages/*"
+    "packages/@antenta/*"
   ],
+	"npmClient": "yarn",
   "version": "0.0.0"
 }
