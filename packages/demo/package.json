@@ -1,0 +1,22 @@
+{
+  "name": "@antenta-cli/demo",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "tuiu <13719283454@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/demo.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "demo:build": "gulp"
+  },
+  "dependencies": {
+    "@antenta-cli/gulp-task": "^1.0.0"
+  }
+}
