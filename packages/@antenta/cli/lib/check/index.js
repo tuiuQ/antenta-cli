@@ -35,31 +35,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var chalk_1 = __importDefault(require("chalk"));
-var check_1 = __importDefault(require("./check"));
-var command_1 = __importDefault(require("./command"));
-function cli() {
-    return __awaiter(this, void 0, void 0, function () {
-        var e_1;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    _a.trys.push([0, 2, , 3]);
-                    return [4 /*yield*/, check_1.default()];
-                case 1:
-                    _a.sent();
-                    command_1.default();
-                    return [3 /*break*/, 3];
-                case 2:
-                    e_1 = _a.sent();
-                    throw new Error(chalk_1.default.red(''));
-                case 3: return [2 /*return*/];
-            }
-        });
+exports.default = (function () { return __awaiter(void 0, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        return [2 /*return*/];
     });
-}
-cli();
+}); });
