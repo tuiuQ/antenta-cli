@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
-	"bin": "./bin/an-cli.js",
+  "bin": "./bin/an-cli.js",
   "scripts": {
     "watch": "gulp watchFile"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@antenta/cli-utils": "^0.0.1",
     "commander": "^8.0.0"
   }
 }
