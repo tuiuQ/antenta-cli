@@ -1,3 +1,4 @@
+import checkNodeVersion from "./checkNodeVersion"
 import checkPkgVersion from "./checkPkgVersion"
 
 export default async () => {
