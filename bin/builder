@@ -1,6 +1,0 @@
-#!/bin/bash
-
-lerna run gulp:build
-lerna run demo:build
-lerna run core:build
-lerna run utils:build
