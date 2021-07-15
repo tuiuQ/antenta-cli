@@ -1,3 +1,4 @@
+import checkGlobalUpdate from "./checkGlobalUpdate"
 import checkNodeVersion from "./checkNodeVersion"
 import checkPkgVersion from "./checkPkgVersion"
 
@@ -11,4 +12,5 @@ export default async () => {
   // 检查用户输入参数
   // 检查环境变量
   // 检查工具是否需要更新
+  await checkGlobalUpdate()
 }
