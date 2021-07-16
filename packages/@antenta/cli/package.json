@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@antenta/cli-utils": "^0.0.1",
     "chalk": "^4.1.1",
     "colors": "^1.4.0",
     "commander": "^8.0.0",
