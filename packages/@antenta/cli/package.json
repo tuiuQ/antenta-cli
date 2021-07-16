@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "commander": "^8.0.0",
-    "url-join": "^4.0.1"
+    "@antenta/cli-utils": "^0.0.1",
+    "commander": "^8.0.0"
   }
 }
