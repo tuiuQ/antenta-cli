@@ -1,0 +1,23 @@
+{
+  "name": "@antenta-cli/core",
+  "version": "0.0.1",
+  "description": "@antenta-cli 核心库",
+  "keywords": [
+    "vue3",
+    "cli"
+  ],
+  "author": "tuiu <13719283454@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
