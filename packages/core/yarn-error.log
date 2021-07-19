@@ -1,0 +1,57 @@
+Arguments: 
+  /Users/tuiu/.nvm/versions/node/v12.16.3/bin/node /Users/tuiu/.nvm/versions/node/v12.16.3/bin/yarn add @antenta-cli/utils
+
+PATH: 
+  /Users/tuiu/Code/envir/mongodb/bin:/bin:/usr/bin:/usr/local/bin:/Users/tuiu/.nvm/versions/node/v12.16.3/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/tuiu/Code/services/bin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/mysql/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/bin:/usr/local/apache-maven-3.6.3/bin:/Users/tuiu/Code/Scripts/bin:/usr/local/nginx/bin:/usr/local/nginx/sbin:/Users/tuiu/.fzf/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.16.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@antenta-cli%2futils: Not found
+      at Request.params.callback [as _callback] (/Users/tuiu/.nvm/versions/node/v12.16.3/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/Users/tuiu/.nvm/versions/node/v12.16.3/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:310:20)
+      at Request.<anonymous> (/Users/tuiu/.nvm/versions/node/v12.16.3/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:310:20)
+      at IncomingMessage.<anonymous> (/Users/tuiu/.nvm/versions/node/v12.16.3/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:416:28)
+      at IncomingMessage.emit (events.js:322:22)
+      at endReadableNT (_stream_readable.js:1187:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "@antenta-cli/core",
+    "version": "0.0.1",
+    "description": "antenta-cli core",
+    "keywords": [
+      "cli"
+    ],
+    "author": "tuiu <13719283454@163.com>",
+    "homepage": "",
+    "license": "ISC",
+    "main": "lib/core.js",
+    "directories": {
+      "lib": "lib",
+      "test": "__tests__"
+    },
+    "files": [
+      "lib"
+    ],
+    "scripts": {
+      "test": "echo \"Error: run tests from root\" && exit 1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
