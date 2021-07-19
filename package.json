@@ -1,0 +1,15 @@
+{
+  "name": "antenta-cli",
+  "version": "0.0.1",
+  "description": "antenta cli",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "tuiu <13719283454@163.com>",
+  "license": "ISC"
+}
