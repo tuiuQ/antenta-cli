@@ -1,1 +1,1 @@
-console.log("Hello Antenta Cli")
+console.log("Hello Antenta CLI")
