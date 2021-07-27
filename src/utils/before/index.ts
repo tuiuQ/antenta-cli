@@ -16,8 +16,8 @@ async function check() {
 async function checkGlobalUpdate() {
   const currentVersion = pkg.version
   const name = pkg.name
-  const latestVersion = await getNpmLastVersion(currentVersion, 'antenta-ui')
-  if (latestVersion && semver.gt(latestVersion, '1.0.6')) {
+  const latestVersion = await getNpmLastVersion(currentVersion, name)
+  if (latestVersion && semver.gt(latestVersion, currentVersion)) {
     log.warn(
       '更新提醒',
       colors.yellow(

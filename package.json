@@ -1,6 +1,6 @@
 {
   "name": "antenta-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "antenta cli",
   "main": "lib/index.js",
   "directories": {
