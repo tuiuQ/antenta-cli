@@ -1,0 +1,48 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --env production --progress --config build/webpack.config.ts",
+    "serve": "webpack serve --progress --config build/webpack.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@types/mini-css-extract-plugin": "^2.0.1",
+    "@types/node": "^16.3.2",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^3.11.5",
+    "@vue/babel-preset-app": "^4.5.13",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "core-js": "^3.15.2",
+    "css-loader": "^5.2.7",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.1.0",
+    "postcss-loader": "2.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^3.1.0",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.1.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^16.3.0",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "vue": "^3.1.4",
+    "vue-router": "^4.0.10",
+    "vuex": "^4.0.2"
+  }
+}
