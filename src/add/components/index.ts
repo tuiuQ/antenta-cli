@@ -16,14 +16,12 @@ export default (name: string, options: { tsx: boolean }) => {
   if (options.tsx) {
     suffix = '.tsx'
   }
-  console.log(suffix)
   try {
     const content = artTemplate(
       join(__dirname, '../../../templates', 'component' + suffix),
       { name: trueName, rootCls: kebabCase(trueName) }
     )
     const dest = `src/${basePath}/${trueName}${suffix}`
-    console.log(dest)
     outputFileSync(dest, content)
     console.log(colors.green('创建成功>>> ' + dest))
   } catch (e) {
