@@ -6,6 +6,10 @@
   "directories": {
     "lib": "lib"
   },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/tuiuQ/antenta-cli.git"
+  },
   "bin": {
     "anc": "./index.js"
   },
