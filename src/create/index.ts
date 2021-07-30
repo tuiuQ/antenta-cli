@@ -36,16 +36,12 @@ async function prepare (projectName: string, options?: CreateOptions) {
     message: '选择构建工具',
     choices: [
       {
-        name: 'Webpack-vue',
-        value: 'webpack-vue'
-      },
-      {
-        name: 'Rollup',
-        value: 'rollup'
-      },
-      {
         name: 'Webpack-tsx',
         value: 'webpack-tsx'
+      },
+      {
+        name: 'Webpack-tsx-quan',
+        value: 'webpack-tsx-quan'
       }
     ],
     default: 'webpack-tsx'
