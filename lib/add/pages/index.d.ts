@@ -1,4 +1,5 @@
-declare const _default: (name: string, options: {
+interface PagesOptions {
     tsx: boolean;
-}) => void;
+}
+declare const _default: (name: string, options: PagesOptions) => void;
 export default _default;

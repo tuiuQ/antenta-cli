@@ -8,7 +8,7 @@ import download from 'download-git-repo'
 import { hasYarn, recursiveDir } from '../utils'
 import { partition } from 'lodash'
 import template from 'art-template'
-import { unlinkSync, writeFileSync } from 'fs-extra'
+import { unlinkSync, writeFile } from 'fs-extra'
 import exec from '../utils/exec'
 
 const spinner = ora()
@@ -18,7 +18,7 @@ async function create (projectName: string, options?: CreateOptions) {
   console.log(colors.blue(' Antenta CLI'))
   const { isInstall, tool, pkgTool } = await prepare(projectName, options)
 
-  const cwd = './' + projectName 
+  const cwd = './' + projectName
   if (isInstall) {
     installTemplate(<'npm' | 'yarn'>pkgTool, cwd)
   }
@@ -42,7 +42,11 @@ async function prepare (projectName: string, options?: CreateOptions) {
       {
         name: 'Webpack-tsx-quan',
         value: 'webpack-tsx-quan'
-      }
+      },
+			{
+				name: 'ts',
+				value: 'ts'
+			}
     ],
     default: 'webpack-tsx'
   })
@@ -57,15 +61,18 @@ async function prepare (projectName: string, options?: CreateOptions) {
   await downloadTemplate(projectName, tool as string)
 
   const allFiles = recursiveDir(projectName)
-  partition(allFiles, 'isDir')[1].forEach(item => {
+  spinner.start('初始化模版中...')
+  partition(allFiles, 'isDir')[1].forEach(async item => {
     const content = template(process.cwd() + '/' + item.file, { projectName })
     let dest = item.file
     if (dest.includes('.art')) {
       unlinkSync(dest)
       dest = dest.replace(/\.art/, '')
     }
-    writeFileSync(dest, content)
+    console.log(dest)
+    await writeFile(dest, content)
   })
+  spinner.succeed('初始化模版成功')
   return {
     isInstall,
     tool,
